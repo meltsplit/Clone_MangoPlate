@@ -13,9 +13,12 @@
 		87EEB7FF287361BF00FB43D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EEB7FD287361BF00FB43D4 /* Main.storyboard */; };
 		87EEB801287361C000FB43D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87EEB800287361C000FB43D4 /* Assets.xcassets */; };
 		87EEB804287361C000FB43D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EEB802287361C000FB43D4 /* LaunchScreen.storyboard */; };
+		F0E4E0403D47A3CBABB13F28 /* Pods_Clone_MangoPlate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC166DD3A7146B994126FDAA /* Pods_Clone_MangoPlate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BD66C09A27E18773802B604 /* Pods-Clone_MangoPlate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clone_MangoPlate.release.xcconfig"; path = "Target Support Files/Pods-Clone_MangoPlate/Pods-Clone_MangoPlate.release.xcconfig"; sourceTree = "<group>"; };
+		5C52F57E21C09B23CD2F0494 /* Pods-Clone_MangoPlate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clone_MangoPlate.debug.xcconfig"; path = "Target Support Files/Pods-Clone_MangoPlate/Pods-Clone_MangoPlate.debug.xcconfig"; sourceTree = "<group>"; };
 		87EEB7F4287361BF00FB43D4 /* Clone_MangoPlate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clone_MangoPlate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EEB7F7287361BF00FB43D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87EEB7F9287361BF00FB43D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		87EEB800287361C000FB43D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87EEB803287361C000FB43D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87EEB805287361C000FB43D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC166DD3A7146B994126FDAA /* Pods_Clone_MangoPlate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clone_MangoPlate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E4E0403D47A3CBABB13F28 /* Pods_Clone_MangoPlate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B341F904DCDEEB67B2448FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC166DD3A7146B994126FDAA /* Pods_Clone_MangoPlate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C91BE3FD5FAF55647234D73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C52F57E21C09B23CD2F0494 /* Pods-Clone_MangoPlate.debug.xcconfig */,
+				5BD66C09A27E18773802B604 /* Pods-Clone_MangoPlate.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		87EEB7EB287361BF00FB43D4 = {
 			isa = PBXGroup;
 			children = (
 				87EEB7F6287361BF00FB43D4 /* Clone_MangoPlate */,
 				87EEB7F5287361BF00FB43D4 /* Products */,
+				5C91BE3FD5FAF55647234D73 /* Pods */,
+				1B341F904DCDEEB67B2448FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,111 @@
 		87EEB7F6287361BF00FB43D4 /* Clone_MangoPlate */ = {
 			isa = PBXGroup;
 			children = (
-				87EEB7F7287361BF00FB43D4 /* AppDelegate.swift */,
-				87EEB7F9287361BF00FB43D4 /* SceneDelegate.swift */,
-				87EEB7FB287361BF00FB43D4 /* ViewController.swift */,
-				87EEB7FD287361BF00FB43D4 /* Main.storyboard */,
-				87EEB800287361C000FB43D4 /* Assets.xcassets */,
-				87EEB802287361C000FB43D4 /* LaunchScreen.storyboard */,
-				87EEB805287361C000FB43D4 /* Info.plist */,
+				87EEB80B287361E500FB43D4 /* Global */,
+				87EEB80E287361FB00FB43D4 /* Network */,
+				87EEB80D287361F500FB43D4 /* Resource */,
+				87EEB80C287361EC00FB43D4 /* Source */,
 			);
 			path = Clone_MangoPlate;
+			sourceTree = "<group>";
+		};
+		87EEB80B287361E500FB43D4 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				87EEB8102873622C00FB43D4 /* Extension */,
+				87EEB80F2873622700FB43D4 /* Constant */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		87EEB80C287361EC00FB43D4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				87EEB8142873626600FB43D4 /* Screen */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		87EEB80D287361F500FB43D4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				87EEB8112873624700FB43D4 /* Asset */,
+				87EEB8122873624D00FB43D4 /* Storyboard */,
+				87EEB8132873625600FB43D4 /* App */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		87EEB80E287361FB00FB43D4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		87EEB80F2873622700FB43D4 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		87EEB8102873622C00FB43D4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		87EEB8112873624700FB43D4 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				87EEB800287361C000FB43D4 /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		87EEB8122873624D00FB43D4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				87EEB802287361C000FB43D4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		87EEB8132873625600FB43D4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				87EEB805287361C000FB43D4 /* Info.plist */,
+				87EEB7F9287361BF00FB43D4 /* SceneDelegate.swift */,
+				87EEB7F7287361BF00FB43D4 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		87EEB8142873626600FB43D4 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				87EEB7FD287361BF00FB43D4 /* Main.storyboard */,
+				87EEB7FB287361BF00FB43D4 /* ViewController.swift */,
+				87EEB8162873627200FB43D4 /* Home */,
+				87EEB8152873626E00FB43D4 /* Auth */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		87EEB8152873626E00FB43D4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		87EEB8162873627200FB43D4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87EEB808287361C000FB43D4 /* Build configuration list for PBXNativeTarget "Clone_MangoPlate" */;
 			buildPhases = (
+				794B8818C8F8DB77953E00C4 /* [CP] Check Pods Manifest.lock */,
 				87EEB7F0287361BF00FB43D4 /* Sources */,
 				87EEB7F1287361BF00FB43D4 /* Frameworks */,
 				87EEB7F2287361BF00FB43D4 /* Resources */,
+				DA98BAD44B78B017532C6FF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +255,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		794B8818C8F8DB77953E00C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clone_MangoPlate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA98BAD44B78B017532C6FF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clone_MangoPlate/Pods-Clone_MangoPlate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clone_MangoPlate/Pods-Clone_MangoPlate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Clone_MangoPlate/Pods-Clone_MangoPlate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87EEB7F0287361BF00FB43D4 /* Sources */ = {
@@ -282,6 +447,7 @@
 		};
 		87EEB809287361C000FB43D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C52F57E21C09B23CD2F0494 /* Pods-Clone_MangoPlate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +476,7 @@
 		};
 		87EEB80A287361C000FB43D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD66C09A27E18773802B604 /* Pods-Clone_MangoPlate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
